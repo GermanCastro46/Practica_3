@@ -64,5 +64,56 @@ la señal reflejada sobre el mismo incremente el nivel de la potencia recibida. 
 \end{figure}
 \subsection{Instrumentación empleada}
 Cada una de las estaciones transmisoras está constituida por un conjunto antena-radio encargado de entablar comunicaciones con el nodo ubicado al 
-otro extremo del enlace.
+otro extremo del enlace. El dispositivo principal de cada estación corresponde a un radio de referencia $Rocket M5$ del fabricante $Ubiquiti$. Según la 
+información proporcionada por el fabricante, el equipo corresponde a una estación base empleada en la construcción de radio enlaces punto a punto y
+punto a multi-punto. Puede alcanzar velocidades de hasta 150Mbps y ha sido diseñado en busca de facilitar la interacción con antenas de múltiple polarización.
+
+La antena de referencia $AF-5G30-S45$ del fabricante $L-Com$ fue seleccionada para hacer parte de cada nodo del enlace. En su hoja de datos, el fabricante
+describe al dispositivo como un equipo de alto desempeño empleado con frecuencia en conjunto con estaciones base de altas prestaciones, para establecer 
+radio enlaces a largas distancias, cuando se requieren tasas de transferencia considerables, dadas su alta ganancia y patrón de radiación altamente directivo. 
+La Figura @ muestra una imagen de los equipos empleados mientras en el Cuadro ! han sido consignados los valores correspondiente a sus pricipales parámetros
+operativos. Entre los accesorios adicionales empleados durante a ejecución de la práctica pueden citarse un par de trípodes para topografía, cables de red de
+diversas longitudes, fuentes de poder tipo $Power over ethernet (PoE)$, adaptadores para conexión de las antenas y dos computadores portátiles que hicieron 
+las veces de estaciones terminales.  
+\begin{figure}
+    \centering
+          \includegraphics[width=0.4\textwidth]{Equipos.png}
+        \caption{Antena tipo Rubber Duck HG2458-5RD-RSP.
+        }
+        \label{fig:Equipos}
+\end{figure}
+\begin{table}[!hbt]
+    \begin{center}
+        \begin{tabular}{ l  l }
+            \hline
+            \multicolumn{2}{c}{\textbf{Estación Base Rocket M5}} \\
+            \hline
+            \hline
+            \textbf{Parámetro} & \textbf{Valor}\\
+            \hline
+            Modos de Operación & Punto de acceso, Estación\\
+            Interfaz de Red & 10/100Mbps \\
+            Puertos de Conexión RF & 2 X RP-SMA \\
+            Frecuencia de Operación & 5150MHz-5875MHz \\
+            Potencia Máxima Tx & 27dBm\\
+            Protocolos soportados & 802.11a, 802.11n/airMax \\
+            \hline
+            \multicolumn{2}{c}{\textbf{Antena AF-5F30-S45}} \\
+            \hline
+            \hline
+            \textbf{Parámetro} & \textbf{Valor}\\
+            \hline
+            Frecuencias de Operación & 4900MHz-5900MHz \\
+            Polarización & Dual (+$45^\circ$), -$45^\circ$\\
+            Ganancia & 4.9GHz: 26dBi \\
+                     & 5GHz-5.9GHz: 30dBi \\
+            Diámetro & 650 mm \\
+            Ángulo Radiación +$45^\circ$  & $5.8^\circ$ \\
+            Ángulo Radiación -$45^\circ$  & $5.8^\circ$\\
+            \hline
+        \end{tabular}
+    \caption[]{Parámetros operativos antena HG2458-5RD-RSP}
+    \label{Cuadro:1}
+    \end{center}
+\end{table}
 \end{document}
