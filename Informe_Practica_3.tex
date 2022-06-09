@@ -48,5 +48,21 @@ llevado a cabo para la implementación de un enlace inalámbrico punto a punto, 
 las consideraciones previas a la implementación del enlace y un análisis comparativo de los resultados obtenidos frente a los pronósticos 
 efectuados mediante la aplicación de las relaciones teóricas existentes para diferentes modelos de propagación.
 \section{Descripción del experimento efectuado}
-
+El ejercicio efectuado en busca de identificar las etapas que deben recorrerse para implementar de forma exitosa un radio enlace, tuvo como 
+punto de partida la selección de los dispositivos a emplear para establecer la comunicación bi-direccional entre dos equipos terminales. Dado que el 
+enlace propuesto corresponde en su configuración a un esquema punto a punto, en el que las comunicaciones se entablan exclusivamente entre dos
+únicos nodos, es necesario implementar dos estaciones idénticas que permitan la transmisión de paquetes entre dos equipos de cómputo conectados
+a cada extremo del enlace. Para identificar los efectos ocasionados sobre la potencia recibida en uno de los extremos del enlace, cuando se delimita
+la primera zona de Fresnel, un obstáculo ha sido posicionado en el punto medio de la distancia que separa las estaciones transmisoras en busca de que
+la señal reflejada sobre el mismo incremente el nivel de la potencia recibida. El escenario descrito puede apreciarse en la Figura @.
+\begin{figure}
+    \centering
+          \includegraphics[width=0.47\textwidth]{Escenario.png}
+        \caption{Antena tipo Rubber Duck HG2458-5RD-RSP.
+        }
+        \label{fig:Escenario}
+\end{figure}
+\subsection{Instrumentación empleada}
+Cada una de las estaciones transmisoras está constituida por un conjunto antena-radio encargado de entablar comunicaciones con el nodo ubicado al 
+otro extremo del enlace.
 \end{document}
