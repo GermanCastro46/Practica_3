@@ -207,8 +207,136 @@ a una altura igual a $1.816[m]$ para cumplir con la restricción impuesta por la
     \begin{aligned}
         &h =1.17[m]\\
         &r_1 = 0.4161[m]\\
-        &h_[torre] = h+r_{1}=1.816[m]\\
+        &h_{torre} = h+r_{1}=1.816[m]\\
     \end{aligned}
 \end{equation}
+Haciendo uso de los procedimientos descritos es posible establecer el radio de la primera zona de Fresnel a lo
+largo de la distancia correspondiente al enlace, de forma tal que el valor del mismo sea establecido en función 
+de la distancia a la que un obstáculo de prueba pueda ser ubicado. La Figura @ muestra el resultado alcanzado para 
+tal función sobre un enlace que abarca 12m de separación y opera a una frecuencia de 5195MHz.
+\begin{figure}
+    \centering
+          \includegraphics[width=0.45\textwidth]{Altura_Fresnel.png}
+        \caption{Antena tipo Rubber Duck HG2458-5RD-RSP.
+        }
+        \label{fig:Altura_Fresnel}
+\end{figure}
 \section{Comparación de los resultados obtenidos con los modelos de propagación considerados}
+Para determinar el nivel de ajuste de los datos recolectados frente a las estimaciones efectuadas a partir de 
+los conceptos teóricos, se han seleccionado los modelos de propagación en el espacio libre y de Barnett-Vignants
+para determinar los niveles de potencia recibida que se espera observar una vez el enlace implementado entre en operación.
+El modelo de propagación en espacio libre determina el nivel de potencia recibida en función de la distancia y la 
+frecuencia de operación considerando a la vez los valores correspondientes a la potencia transmitida y a las ganancias
+de transmisión y recepción, según se muestra en !. 
+\begin{equation}
+    \label{eq:Eq4}
+    \begin{aligned}
+        &P_{rx}[dBm] = P_{tx} + G_{tx} + G_{rx} - L_{fs}\\
+        &L_{fs}[dB] = 32.45+20logd[Km]+20logf[MHz]\\
+        &P_{rx} = \textit{Potencia recibida}\\
+        &P_{tx} = \textit{Potencia transmitida}\\
+        &G_{tx} = \textit{Ganancia de transmisión}\\
+        &G_{rx} = \textit{Ganancia de recepción}\\
+        &L_{fs} = \textit{Pérdidas en el espacio libre}\\
+        &d = \textit{Distancia hasta el punto de transmisión}\\
+        &f = \textit{Frecuencia de operación}\\
+    \end{aligned}
+\end{equation}
+Empleando los datos correspondientes al enlace establecido, es posible determinar el valor ideal para la potencia recibida 
+a partir del procedimiento indicado en !. Empleando la información descrita se establece un valor para la pérdidas de espacio libre
+igual a $68.3453[dB]$ y un estimado para la potencia recibida ideal igual a $-12.3453[dBm]$.
+\begin{equation}
+    \label{eq:Eq5}
+    \begin{aligned}
+        &d = 12[m] = 0.012[Km]\\
+        &f = 5195[MHz]\\
+        &P_{tx} = -4[dBm]\\
+        &G_{tx} = G_{rx} = 30[dBi]\\
+        &L_{fs} = 32.45+20log(0.012[Km])+20log(5195[MHz])\\
+        &L_{fs} = 68.3453[dB]\\
+        &P_{rx} = -4[dBm] + 30[dBi] + 30[dBi] - 68.3453[dB]\\
+        &P_{rx} = -12.3453[dBm]
+    \end{aligned}
+\end{equation}
+El modelo de Barnett-Vignants por su parte, agrega un margen de desvanecimiento sobre el valor ideal de
+la potencia recibida considerando las características del terreno y las condiciones meteorológicas de lugar
+de montaje, mediante un coeficiente denominado $C$. El margen depende también del grado de disponibilidad deseado 
+para el enlace establecido, parámetro que se representa con la letra $R$ en la relación indicada en !. 
+\begin{equation}
+    \label{eq:Eq6}
+    \begin{aligned}
+        &M_{f}[dB] = 30logd[Km] + 10log6Cf[GHz]\\
+        & - 10log(1-R) - 70\\
+        &P_{rx}[dBm] = P_{tx} + G_{tx} + G_{rx} - L_{fs} - M_{f}\\
+        &d = \textit{Distancia hasta el punto de transmisión}\\
+        &f = \textit{Frecuencia de operación}\\
+        &C = \textit{Factor condiciones ambientales}\\
+        &R = \textit{Disponibilidad del enlace}\\
+        &M_{f} = \textit{Margen de desvanecimiento}\\
+        &P_{rx} = \textit{Potencia recibida}\\
+        &P_{tx} = \textit{Potencia transmitida}\\
+        &G_{tx} = \textit{Ganancia de transmisión}\\
+        &G_{rx} = \textit{Ganancia de recepción}\\
+        &L_{fs} = \textit{Pérdidas en el espacio libre}\\
+    \end{aligned}
+\end{equation}
+Una vez más, empleando los valores correspondientes a cada parámetro requerido es posible determinar el valor
+para el margen de desvanecimiento que permite establecer el valor final para la potencia recibida estimada. Considerando
+que el lugar seleccionado para el despliegue del montaje cuenta con características meteorológicas del entorno urbano y
+que el terreno no describe pendientes pronunciadas ni vegetación significativa, el coeficiente $C$ puede tomar el valor 1.
+En cuanto a la disponibilidad del enlace, se establece que dada la baja distancia a cubrir el valor de $R$ debe aproximarse 
+a 1 en busca de señalar que la comunicación debe efectuarse de forma permanente. Establecidos lo valores necesarios, el procedimiento 
+llevado a cabo para determinar el margen del desvanecimiento y estimar el valor de la potencia recibida se muestra en !.
+\begin{equation}
+    \label{eq:Eq7}
+    \begin{aligned}
+        &C = 1\\
+        &R = 0.999\\
+        &d = 12[m] = 0.012[Km]\\
+        &f = 5195[MHz]\\
+        &P_{tx} = -4[dBm]\\
+        &G_{tx} = G_{rx} = 30[dBi]\\
+        &L_{fs} = 32.45+20log(0.012[Km])+20log(5195[MHz])\\
+        &L_{fs} = 68.3453[dB]\\
+        &M_{f} = 30log(0.012[Km]) + 10log(6*1*5.195[GHz])\\
+        & - 10log(1-0.999) - 70\\
+        &M_{f} = 7.3128[dB]\\
+        &P_{rx} = -4[dBm] + 30[dBi] + 30[dBi] - 68.3453[dB]\\
+        & - 7.3128[dB]\\
+        &P_{rx} = -19.6581[dBm]
+    \end{aligned}
+\end{equation}
+Concluida la caracterización del enlace, los resultados derivados de la misma empleando los modelos de 
+propagación en el espacio libre y de Barnett-Vignants pueden resumirse según se indica en el Cuadro !.
+\begin{table}[!hbt]
+    \begin{center}
+        \begin{tabular}{ l  l }
+            \hline
+            \hline
+            \textbf{Parámetro} & \textbf{Valor}\\
+            \hline
+            Potencia transmitida & -4 dBm \\
+            Ganancia de las antenas & +30 dBi\\
+            Pérdidas de espacio Libre & -68.3453 dB \\
+            \textbf{Potencia recibida ideal} & \textbf{-12.3453 dBm} \\
+            Margen de desvanecimiento & -7.3128 dB \\
+            \textbf{Potencia recibida estimada}  & \textbf{-19.6581 dBm}\\
+            \hline
+            \hline\\
+        \end{tabular}
+    \caption[]{Parámetros operativos antena HG2458-06DPU2}
+    \label{Cuadro:3}
+    \end{center}
+\end{table}
+Finalmente, los modelos descritos pueden ser empleados para establecer teóricamente el comportamiento de la potencia 
+recibida a lo largo del enlace implementado. Las funciones que describen dicho comportamiento en función de la distancia 
+de medición pueden apreciarse en la Figura @. 
+\begin{figure}
+    \centering
+          \includegraphics[width=0.45\textwidth]{Potencia_Modelos.png}
+        \caption{Antena tipo Rubber Duck HG2458-5RD-RSP.
+        }
+        \label{fig:Potencia_Modelos}
+\end{figure}
+\section{Conclusiones}
 \end{document}
