@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.5.2)  9 JUN 2022 21:46
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.5.2)  10 JUN 2022 00:28
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -447,7 +447,7 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 27.
  (C:\Users\germa\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-<Escenario.png, id=27, 880.79062pt x 351.56343pt>
+<Escenario.png, id=39, 880.79062pt x 351.56343pt>
 File: Escenario.png Graphic file (type png)
 <use Escenario.png>
 Package pdftex.def Info: Escenario.png  used on input line 60.
@@ -455,7 +455,7 @@ Package pdftex.def Info: Escenario.png  used on input line 60.
 
 Underfull \vbox (badness 3612) has occurred while \output is active []
 
-<Equipos.png, id=29, 602.25pt x 451.6875pt>
+<Equipos.png, id=41, 602.25pt x 451.6875pt>
 File: Equipos.png Graphic file (type png)
 <use Equipos.png>
 Package pdftex.def Info: Equipos.png  used on input line 80.
@@ -464,12 +464,18 @@ Package pdftex.def Info: Equipos.png  used on input line 80.
 
 
  <./Escenario.png>]
-<Potencias.png, id=42, 300.1614pt x 249.5724pt>
+<Potencias.png, id=54, 300.1614pt x 249.5724pt>
 File: Potencias.png Graphic file (type png)
 <use Potencias.png>
-Package pdftex.def Info: Potencias.png  used on input line 150.
+Package pdftex.def Info: Potencias.png  used on input line 151.
 (pdftex.def)             Requested size: 206.39685pt x 171.61105pt.
  [2 <./Equipos.png>]
+<Fresnel.png, id=65, 720.44156pt x 240.9pt>
+File: Fresnel.png Graphic file (type png)
+<use Fresnel.png>
+Package pdftex.def Info: Fresnel.png  used on input line 172.
+(pdftex.def)             Requested size: 206.39685pt x 69.01376pt.
+
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -481,27 +487,25 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[3
-
- <./Potencias.png (PNG copy)>] (Informe_Practica_3.aux
+[3 <./Potencias.png (PNG copy)> <./Fresnel.png>] (Informe_Practica_3.aux
 LaTeX Info: Redefining \. on input line 25.
 LaTeX Info: Redefining \% on input line 25.
 )
 Package rerunfilecheck Info: File `Informe_Practica_3.out' has not changed.
-(rerunfilecheck)             Checksum: 9B1F00B9BF3567BB5431C395A8F67C40;1097.
+(rerunfilecheck)             Checksum: E325F409A83FE2F6ED2811DCCA74F517;2085.
  ) 
 Here is how much of TeX's memory you used:
- 12490 strings out of 478547
- 200727 string characters out of 2841836
- 533078 words of memory out of 3000000
- 30529 multiletter control sequences out of 15000+600000
+ 12511 strings out of 478547
+ 200996 string characters out of 2841836
+ 533312 words of memory out of 3000000
+ 30542 multiletter control sequences out of 15000+600000
  504053 words of font info for 97 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 60i,12n,63p,382b,363s stack positions out of 10000i,1000n,20000p,200000b,80000s
-{C:/Users/germa/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/Users/germa/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/germa/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/germa/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/germa/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/germa/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/germa/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/germa/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/germa/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/germa/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Informe_Practica_3.pdf (3 pages, 366958 bytes).
+ 60i,12n,63p,619b,363s stack positions out of 10000i,1000n,20000p,200000b,80000s
+{C:/Users/germa/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/Users/germa/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/germa/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/germa/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/germa/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/germa/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/germa/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/germa/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/germa/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/germa/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/germa/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/germa/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/germa/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
+Output written on Informe_Practica_3.pdf (3 pages, 443129 bytes).
 PDF statistics:
- 102 PDF objects out of 1000 (max. 8388607)
- 14 named destinations out of 1000 (max. 500000)
- 64 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 135 PDF objects out of 1000 (max. 8388607)
+ 21 named destinations out of 1000 (max. 500000)
+ 93 words of extra memory for PDF output out of 10000 (max. 10000000)
 
