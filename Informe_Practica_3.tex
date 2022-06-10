@@ -73,7 +73,7 @@ describe al dispositivo como un equipo de alto desempeño empleado con frecuenci
 radio enlaces a largas distancias, cuando se requieren tasas de transferencia considerables, dadas su alta ganancia y patrón de radiación altamente directivo. 
 La Figura @ muestra una imagen de los equipos empleados mientras en el Cuadro ! han sido consignados los valores correspondiente a sus pricipales parámetros
 operativos. Entre los accesorios adicionales empleados durante a ejecución de la práctica pueden citarse un par de trípodes para topografía, cables de red de
-diversas longitudes, fuentes de poder tipo $Power over ethernet (PoE)$, adaptadores para conexión de las antenas y dos computadores portátiles que hicieron 
+diversas longitudes, fuentes de poder tipo $\textit{Power over ethernet (PoE)}$, adaptadores para conexión de las antenas y dos computadores portátiles que hicieron 
 las veces de estaciones terminales.  
 \begin{figure}
     \centering
@@ -98,7 +98,7 @@ las veces de estaciones terminales.
             Potencia Máxima Tx & 27dBm\\
             Protocolos soportados & 802.11a, 802.11n/airMax \\
             \hline
-            \multicolumn{2}{c}{\textbf{Antena AF-5F30-S45}} \\
+            \multicolumn{2}{c}{\textbf{Antena AF-5G30-S45}} \\
             \hline
             \hline
             \textbf{Parámetro} & \textbf{Valor}\\
@@ -110,10 +110,34 @@ las veces de estaciones terminales.
             Diámetro & 650 mm \\
             Ángulo Radiación +$45^\circ$  & $5.8^\circ$ \\
             Ángulo Radiación -$45^\circ$  & $5.8^\circ$\\
-            \hline
+            \hline\\
         \end{tabular}
     \caption[]{Parámetros operativos antena HG2458-5RD-RSP}
     \label{Cuadro:1}
     \end{center}
 \end{table}
+\subsection{Configuración de las Estaciones Base}
+Para implementar el radio enlace propuesto, cada una de las estaciones base ubicadas en los nodos extremos del 
+mismo debe ser configurada siguiendo la arquitectura correspondiente a una conexión punto a punto. Para alcanzar 
+tal fin, uno de los $RocketM5$ debe ser configurado en modo punto de acceso en busca de que su similar, ubicado en el
+nodo remoto opere en modo estación a fin de fijar la señal transmitida por el punto de acceso. Dicha señal debe estar
+identificada por una etiqueta que la diferencie de otras transmisiones efectuadas sobre la misma banda de frecuencias 
+seleccionada. La configuración descrita es llevada a cabo empleando la interfaz web disponible en cada uno de los equipos,
+a partir de la dirección IP que les ha sido asignada. Estaciones base y computadores portátiles emplean la dirección de red 
+clase C $\textit{192.168.1.0}$ de forma tal que el punto de acceso corresponde a la dirección $\textit{192.168.1.20}$, la estación remota a
+la dirección $\textit{192.168.1.21}$ y los equipos terminales de estación base y remota a las direcciones $\textit{192.168.1.24}$ y $\textit{192.168.1.25}$
+respectivamente. Puesto que la ganancia de las antenas seleccionadas para la implementación del enlace corresponde a valores
+considerablemente altos (30dBi), la potencia transmitida por la estación base se limitó a -4dBm considerando la corta 
+distancia (12m) que la señal emitida debe recorrer para alcanzar a la estación remota. Finalmente, el canal seleccionado 
+para la ejecución de la transmisión corresponde al constituido por las frecuencias comprendidas entre los 5175MHz y los 5215MHz, 
+siendo la frecuencia central del mismo igual a 5195MHz.
+\section{Metodología de Medición}
+Una vez realizada la configuración requerida por cada uno de los componentes del radio enlace, las antenas correspondientes a 
+estación base y estación remota fueron orientadas de forma tal que la potencia recibida en cada nodo alcanzara su valor máximo. El 
+procedimiento fue repetido para variaciones en la altura de montaje de las antenas en busca del valor máximo de potencia recibida. 
+Establecida la disposición óptima para la operación, se realizaron variaciones paulatinas sobre la altura de la antena del punto de acceso
+registrando los valores de potencia recibida suministrados por el radio configurado como punto de acceso, que corresponden a las polarizaciones vertical y horizontal 
+y al valor promedio generado a partir de las mismas. La altura de la antena correspondiente a la estación remota permaneció constante en 1.40m en tanto
+que para el obstáculo ubicado en el punto medio de la distancia de separación entre estaciones la altura registrada correspondió a los 1.17m.
+\section{Resultados Obtenidos}
 \end{document}
