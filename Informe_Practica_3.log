@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.4.27)  9 JUN 2022 12:54
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.4.27)  9 JUN 2022 20:13
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -446,7 +446,7 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 27.
  (d:/VAIO/LATEX/texlive/2021/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-<Escenario.png, id=16, 880.79062pt x 351.56343pt>
+<Escenario.png, id=28, 880.79062pt x 351.56343pt>
 File: Escenario.png Graphic file (type png)
 <use Escenario.png>
 Package pdftex.def Info: Escenario.png  used on input line 60.
@@ -454,12 +454,15 @@ Package pdftex.def Info: Escenario.png  used on input line 60.
 
 Underfull \vbox (badness 3612) has occurred while \output is active []
 
-<Equipos.png, id=18, 602.25pt x 451.6875pt>
+<Equipos.png, id=30, 602.25pt x 451.6875pt>
 File: Equipos.png Graphic file (type png)
 <use Equipos.png>
 Package pdftex.def Info: Equipos.png  used on input line 80.
 (pdftex.def)             Requested size: 206.39685pt x 154.79852pt.
+ [1{d:/VAIO/LATEX/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
+
+ <d:/Descargas/DOCUMENTOS/MAIE 2021/SEMESTRE 3/INGENIERIA DE RF/PRACTICA_3/Escenario.png>]
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -471,31 +474,26 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[1{d:/VAIO/LATEX/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
-
-
- <d:/Descargas/DOCUMENTOS/MAIE 2021/SEMESTRE 3/INGENIERIA DE RF/PRACTICA_3/Escenario.png>] [2
-
- <d:/Descargas/DOCUMENTOS/MAIE 2021/SEMESTRE 3/INGENIERIA DE RF/PRACTICA_3/Equipos.png>] (d:/Descargas/DOCUMENTOS/MAIE 2021/SEMESTRE 3/INGENIERIA DE RF/PRACTICA_3/Informe_Practica_3.aux
+[2 <d:/Descargas/DOCUMENTOS/MAIE 2021/SEMESTRE 3/INGENIERIA DE RF/PRACTICA_3/Equipos.png>] (d:/Descargas/DOCUMENTOS/MAIE 2021/SEMESTRE 3/INGENIERIA DE RF/PRACTICA_3/Informe_Practica_3.aux
 LaTeX Info: Redefining \. on input line 25.
 LaTeX Info: Redefining \% on input line 25.
 )
 Package rerunfilecheck Info: File `Informe_Practica_3.out' has not changed.
-(rerunfilecheck)             Checksum: 0805EF6615BE1E4D6A881FCE3E349755;529.
+(rerunfilecheck)             Checksum: 9B1F00B9BF3567BB5431C395A8F67C40;1097.
  ) 
 Here is how much of TeX's memory you used:
- 11739 strings out of 478994
- 174317 string characters out of 5856668
- 514917 words of memory out of 5000000
- 29047 multiletter control sequences out of 15000+600000
+ 11745 strings out of 478994
+ 174387 string characters out of 5856668
+ 514913 words of memory out of 5000000
+ 29050 multiletter control sequences out of 15000+600000
  438224 words of font info for 96 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 71i,12n,74p,368b,361s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 71i,12n,74p,385b,361s stack positions out of 5000i,500n,10000p,200000b,80000s
 {d:/VAIO/LATEX/texlive/2021/texmf-dist/fonts/enc/dvips/base/8r.enc}<d:/VAIO/LATEX/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><d:/VAIO/LATEX/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><d:/VAIO/LATEX/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><d:/VAIO/LATEX/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><d:/VAIO/LATEX/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><d:/VAIO/LATEX/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb><d:/VAIO/LATEX/texlive/2021/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><d:/VAIO/LATEX/texlive/2021/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><d:/VAIO/LATEX/texlive/2021/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on "d:/Descargas/DOCUMENTOS/MAIE 2021/SEMESTRE 3/INGENIERIA DE RF/PRACTICA_3/Informe_Practica_3.pdf" (2 pages, 314972 bytes).
+Output written on "d:/Descargas/DOCUMENTOS/MAIE 2021/SEMESTRE 3/INGENIERIA DE RF/PRACTICA_3/Informe_Practica_3.pdf" (2 pages, 320290 bytes).
 PDF statistics:
- 76 PDF objects out of 1000 (max. 8388607)
- 59 compressed objects within 1 object stream
- 9 named destinations out of 1000 (max. 500000)
- 35 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 88 PDF objects out of 1000 (max. 8388607)
+ 71 compressed objects within 1 object stream
+ 12 named destinations out of 1000 (max. 500000)
+ 59 words of extra memory for PDF output out of 10000 (max. 10000000)
 
