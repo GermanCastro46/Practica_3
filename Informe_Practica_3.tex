@@ -54,11 +54,11 @@ enlace propuesto corresponde en su configuración a un esquema punto a punto, en
 únicos nodos, es necesario implementar dos estaciones idénticas que permitan la transmisión de paquetes entre dos equipos de cómputo conectados
 a cada extremo del enlace. Para identificar los efectos ocasionados sobre la potencia recibida en uno de los extremos del enlace, cuando se delimita
 la primera zona de Fresnel, un obstáculo ha sido posicionado en el punto medio de la distancia que separa las estaciones transmisoras en busca de que
-la señal reflejada sobre el mismo incremente el nivel de la potencia recibida. El escenario descrito puede apreciarse en la Figura @.
+la señal reflejada sobre el mismo incremente el nivel de la potencia recibida. El escenario descrito puede apreciarse en la Figura \ref{fig:Escenario}.
 \begin{figure}
     \centering
           \includegraphics[width=0.47\textwidth]{Escenario.png}
-        \caption{Antena tipo Rubber Duck HG2458-5RD-RSP.
+        \caption{Escenario descriptivo para el experimento efectuado.
         }
         \label{fig:Escenario}
 \end{figure}
@@ -71,14 +71,14 @@ punto a multi-punto. Puede alcanzar velocidades de hasta 150Mbps y ha sido dise�
 La antena de referencia $AF-5G30-S45$ del fabricante $L-Com$ fue seleccionada para hacer parte de cada nodo del enlace. En su hoja de datos, el fabricante
 describe al dispositivo como un equipo de alto desempeño empleado con frecuencia en conjunto con estaciones base de altas prestaciones, para establecer 
 radio enlaces a largas distancias, cuando se requieren tasas de transferencia considerables, dadas su alta ganancia y patrón de radiación altamente directivo. 
-La Figura @ muestra una imagen de los equipos empleados mientras en el Cuadro ! han sido consignados los valores correspondiente a sus pricipales parámetros
+La Figura \ref{fig:Equipos} muestra una imagen de los equipos empleados mientras en el Cuadro \ref{Cuadro:1} han sido consignados los valores correspondiente a sus pricipales parámetros
 operativos. Entre los accesorios adicionales empleados durante a ejecución de la práctica pueden citarse un par de trípodes para topografía, cables de red de
 diversas longitudes, fuentes de poder tipo $\textit{Power over ethernet (PoE)}$, adaptadores para conexión de las antenas y dos computadores portátiles que hicieron 
 las veces de estaciones terminales.  
 \begin{figure}
     \centering
           \includegraphics[width=0.4\textwidth]{Equipos.png}
-        \caption{Antena tipo Rubber Duck HG2458-5RD-RSP.
+        \caption{Equipo empleados por cada estación del radio enlace.
         }
         \label{fig:Equipos}
 \end{figure}
@@ -112,7 +112,7 @@ las veces de estaciones terminales.
             Ángulo Radiación -$45^\circ$  & $5.8^\circ$\\
             \hline\\
         \end{tabular}
-    \caption[]{Parámetros operativos antena HG2458-5RD-RSP}
+    \caption[]{Parámetros operativos para el radio y la antena seleccionados}
     \label{Cuadro:1}
     \end{center}
 \end{table}
@@ -144,12 +144,12 @@ que para el obstáculo ubicado en el punto medio de la distancia de separación 
 Concluido el plan de mediciones propuesto se establecieron tres conjuntos de 15 parejas de datos altura-potencia recibida derivados de la información suministrada
 por la estación base. Los valores de potencia recibida analizados corresponden a las polarizaciones vertical y horizontal y a la potencia
 promedio calculada por el radio que hace parte de la estación base. A partir de dichos conjuntos, pueden construirse gráficas de la potencia recibida en función de la 
-altura de la antena transmisora para cada caso, según se aprecia en la Figura @. Los resultados observados serán empleados para contrastar los valores de potencia 
+altura de la antena transmisora para cada caso, según se aprecia en la Figura \ref{fig:Potencias}. Los resultados observados serán empleados para contrastar los valores de potencia 
 recibida generados a partir de cálculos teóricos que emplean el modelo de propagación en espacio libre y el modelo de propagación de Barnett-Vignants.
 \begin{figure}
     \centering
           \includegraphics[width=0.4\textwidth]{Potencias.png}
-        \caption{Antena tipo Rubber Duck HG2458-5RD-RSP.
+        \caption{Potencias recibidas para cada polarización y su valor promedio.
         }
         \label{fig:Potencias}
 \end{figure}
@@ -164,13 +164,13 @@ sobre el comportamiento de la señal se centra sobre las tres primeras.  En la p
 original contribuyen a incrementar la potencia recibida en los extremos del enlace. 
 
 La caracterización de la zona de Fresnel corresponde al proceso mediante el cual se determina la altura adicional $r_1$ que debe tener la línea de vista
-frente a la altura de un obstáculo determinado $h$ para un radio enlace establecido, según puede apreciarse en la Figura @. Para determinar el valor de $r_1$ la 
-relación expresada en ! es aplicada, siendo $\lambda$ la longitud de onda correspondiente a la frecuencia de operación y $d_1$ y $d_2$ las distancias existentes
+frente a la altura de un obstáculo determinado $h$ para un radio enlace establecido, según puede apreciarse en la Figura \ref{fig:Fresnel}. Para determinar el valor de $r_1$ la 
+relación expresada en \ref{eq:Eq1} es aplicada, siendo $\lambda$ la longitud de onda correspondiente a la frecuencia de operación y $d_1$ y $d_2$ las distancias existentes
 entre los extremos del enlace y el obstáculo analizado.
 \begin{figure}
     \centering
           \includegraphics[width=0.47\textwidth]{Fresnel.png}
-        \caption{Antena tipo Rubber Duck HG2458-5RD-RSP.
+        \caption{Zona de Fresnel para un radio enlace punto a punto.
         }
         \label{fig:Fresnel}
 \end{figure}
@@ -185,7 +185,7 @@ entre los extremos del enlace y el obstáculo analizado.
     \end{aligned}
 \end{equation}
 Aplicando los valores correspondientes al enlace constituido, es posible determinar el valor de $r_1$ siguiendo el procedimiento
-señalado en !.
+señalado en \ref{eq:Eq2}.
 \begin{equation}
     \label{eq:Eq2}
     \begin{aligned}
@@ -200,7 +200,7 @@ señalado en !.
 \end{equation}
 Considerando que la altura del obstáculo existente en el punto medio del trayecto cubierto por el radio enlace se estableció en $1.17[m]$, siguiendo 
 los planteamientos establecidos durante la descripción de la zona de Fresnel es posible afirmar que la altura de las torres de transmisión y recepción 
-puede ser determinada siguiendo las indicaciones especificadas en !. Las antenas empleadas para la implementación del enlace propuesto deben ubicarse entonces
+puede ser determinada siguiendo las indicaciones especificadas en \ref{eq:Eq3}. Las antenas empleadas para la implementación del enlace propuesto deben ubicarse entonces
 a una altura igual a $1.816[m]$ para cumplir con la restricción impuesta por la primera zona de Fresnel.
 \begin{equation}
     \label{eq:Eq3}
@@ -212,12 +212,12 @@ a una altura igual a $1.816[m]$ para cumplir con la restricción impuesta por la
 \end{equation}
 Haciendo uso de los procedimientos descritos es posible establecer el radio de la primera zona de Fresnel a lo
 largo de la distancia correspondiente al enlace, de forma tal que el valor del mismo sea establecido en función 
-de la distancia a la que un obstáculo de prueba pueda ser ubicado. La Figura @ muestra el resultado alcanzado para 
+de la distancia a la que un obstáculo de prueba pueda ser ubicado. La Figura \ref{fig:Altura_Fresnel} muestra el resultado alcanzado para 
 tal función sobre un enlace que abarca 12m de separación y opera a una frecuencia de 5195MHz.
 \begin{figure}
     \centering
           \includegraphics[width=0.45\textwidth]{Altura_Fresnel.png}
-        \caption{Antena tipo Rubber Duck HG2458-5RD-RSP.
+        \caption{Altura de la primera zona de Fresnel para el radio enlace propuesto.
         }
         \label{fig:Altura_Fresnel}
 \end{figure}
@@ -227,7 +227,7 @@ los conceptos teóricos, se han seleccionado los modelos de propagación en el e
 para determinar los niveles de potencia recibida que se espera observar una vez el enlace implementado entre en operación.
 El modelo de propagación en espacio libre determina el nivel de potencia recibida en función de la distancia y la 
 frecuencia de operación considerando a la vez los valores correspondientes a la potencia transmitida y a las ganancias
-de transmisión y recepción, según se muestra en !. 
+de transmisión y recepción, según se muestra en \ref{eq:Eq4}. 
 \begin{equation}
     \label{eq:Eq4}
     \begin{aligned}
@@ -243,7 +243,7 @@ de transmisión y recepción, según se muestra en !.
     \end{aligned}
 \end{equation}
 Empleando los datos correspondientes al enlace establecido, es posible determinar el valor ideal para la potencia recibida 
-a partir del procedimiento indicado en !. Empleando la información descrita se establece un valor para la pérdidas de espacio libre
+a partir del procedimiento indicado en \ref{eq:Eq5}. Empleando la información descrita se establece un valor para la pérdidas de espacio libre
 igual a $68.3453[dB]$ y un estimado para la potencia recibida ideal igual a $-12.3453[dBm]$.
 \begin{equation}
     \label{eq:Eq5}
@@ -261,7 +261,7 @@ igual a $68.3453[dB]$ y un estimado para la potencia recibida ideal igual a $-12
 El modelo de Barnett-Vignants por su parte, agrega un margen de desvanecimiento sobre el valor ideal de
 la potencia recibida considerando las características del terreno y las condiciones meteorológicas de lugar
 de montaje, mediante un coeficiente denominado $C$. El margen depende también del grado de disponibilidad deseado 
-para el enlace establecido, parámetro que se representa con la letra $R$ en la relación indicada en !. 
+para el enlace establecido, parámetro que se representa con la letra $R$ en la relación indicada en \ref{eq:Eq6}. 
 \begin{equation}
     \label{eq:Eq6}
     \begin{aligned}
@@ -286,7 +286,7 @@ que el lugar seleccionado para el despliegue del montaje cuenta con característ
 que el terreno no describe pendientes pronunciadas ni vegetación significativa, el coeficiente $C$ puede tomar el valor 1.
 En cuanto a la disponibilidad del enlace, se establece que dada la baja distancia a cubrir el valor de $R$ debe aproximarse 
 a 1 en busca de señalar que la comunicación debe efectuarse de forma permanente. Establecidos lo valores necesarios, el procedimiento 
-llevado a cabo para determinar el margen del desvanecimiento y estimar el valor de la potencia recibida se muestra en !.
+llevado a cabo para determinar el margen del desvanecimiento y estimar el valor de la potencia recibida se muestra en \ref{eq:Eq7}.
 \begin{equation}
     \label{eq:Eq7}
     \begin{aligned}
@@ -307,7 +307,7 @@ llevado a cabo para determinar el margen del desvanecimiento y estimar el valor 
     \end{aligned}
 \end{equation}
 Concluida la caracterización del enlace, los resultados derivados de la misma empleando los modelos de 
-propagación en el espacio libre y de Barnett-Vignants pueden resumirse según se indica en el Cuadro !.
+propagación en el espacio libre y de Barnett-Vignants pueden resumirse según se indica en el Cuadro \ref{Cuadro:2}.
 \begin{table}[!hbt]
     \begin{center}
         \begin{tabular}{ l  l }
@@ -324,19 +324,30 @@ propagación en el espacio libre y de Barnett-Vignants pueden resumirse según s
             \hline
             \hline\\
         \end{tabular}
-    \caption[]{Parámetros operativos antena HG2458-06DPU2}
-    \label{Cuadro:3}
+    \caption[]{Potencia recibida estimada según modelo de propagación en espacio libre y de Barnett-Vignants}
+    \label{Cuadro:2}
     \end{center}
 \end{table}
 Finalmente, los modelos descritos pueden ser empleados para establecer teóricamente el comportamiento de la potencia 
 recibida a lo largo del enlace implementado. Las funciones que describen dicho comportamiento en función de la distancia 
-de medición pueden apreciarse en la Figura @. 
+de medición pueden apreciarse en la Figura \ref{fig:Potencia_Modelos}. 
 \begin{figure}
     \centering
           \includegraphics[width=0.45\textwidth]{Potencia_Modelos.png}
-        \caption{Antena tipo Rubber Duck HG2458-5RD-RSP.
+        \caption{Comportamiento de la potencia recibida en función de la distancia según modelos evaluados.
         }
         \label{fig:Potencia_Modelos}
 \end{figure}
 \section{Conclusiones}
+Luego de analizar los resultados observados durante la planeación e implementación del radio enlace punto a punto propuesto,
+es posible afirmar que buena parte del éxito de la solución propuesta depende de las consideraciones efectuadas durante la fase
+de diseño. Dichas consideraciones corresponden a la determinación de la arquitectura del enlace a constituir, la selección de equipos a emplear, 
+la caracterización de la zona de Fresnel asociada al radio enlace y la aplicación de modelos de propagación que permitan estimar 
+los valores de potencia recibida bajo las condiciones del escenario de trabajo. 
+
+El análisis del comportamiento de la señal al interior de la zona de Fresnel permite establecer que si bien el valor de la potencia
+recibida podría verse incrementada en dicho sector, existen a la vez diversos efectos negativos derivados de los fenómenos multi trayectoria
+que pueden afectar el desempeño del enlace establecido. Si adicionalmente los modelos teóricos de propagación correspondientes al espacio libre y 
+al margen de desvanecimiento son empleados durante la fase de planificación del enlace, los resultados alcanzados una vez desplegada la solución
+coinciden con los presupuestos derivados de la aplicación de las relaciones teóricas.
 \end{document}
