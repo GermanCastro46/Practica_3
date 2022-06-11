@@ -48,7 +48,7 @@ llevado a cabo para la implementación de un enlace inalámbrico punto a punto, 
 las consideraciones previas a la implementación del enlace y un análisis comparativo de los resultados obtenidos frente a los pronósticos 
 efectuados mediante la aplicación de las relaciones teóricas existentes para diferentes modelos de propagación.
 \section{Descripción del experimento efectuado}
-El ejercicio efectuado en busca de identificar las etapas que deben recorrerse para implementar de forma exitosa un radio enlace, tuvo como 
+El ejercicio efectuado en busca de identificar las etapas que deben recorrerse para implementar de forma exitosa un radioenlace, tuvo como 
 punto de partida la selección de los dispositivos a emplear para establecer la comunicación bi-direccional entre dos equipos terminales. Dado que el 
 enlace propuesto corresponde en su configuración a un esquema punto a punto, en el que las comunicaciones se entablan exclusivamente entre dos
 únicos nodos, es necesario implementar dos estaciones idénticas que permitan la transmisión de paquetes entre dos equipos de cómputo conectados
@@ -65,12 +65,12 @@ la señal reflejada sobre el mismo incremente el nivel de la potencia recibida. 
 \subsection{Instrumentación empleada}
 Cada una de las estaciones transmisoras está constituida por un conjunto antena-radio encargado de entablar comunicaciones con el nodo ubicado al 
 otro extremo del enlace. El dispositivo principal de cada estación corresponde a un radio de referencia $Rocket M5$ del fabricante $Ubiquiti$. Según la 
-información proporcionada por el fabricante, el equipo corresponde a una estación base empleada en la construcción de radio enlaces punto a punto y
+información proporcionada por el fabricante, el equipo corresponde a una estación base empleada en la construcción de radioenlaces punto a punto y
 punto a multi-punto. Puede alcanzar velocidades de hasta 150Mbps y ha sido diseñado en busca de facilitar la interacción con antenas de múltiple polarización.
 
 La antena de referencia $AF-5G30-S45$ del fabricante $L-Com$ fue seleccionada para hacer parte de cada nodo del enlace. En su hoja de datos, el fabricante
 describe al dispositivo como un equipo de alto desempeño empleado con frecuencia en conjunto con estaciones base de altas prestaciones, para establecer 
-radio enlaces a largas distancias, cuando se requieren tasas de transferencia considerables, dadas su alta ganancia y patrón de radiación altamente directivo. 
+radioenlaces a largas distancias, cuando se requieren tasas de transferencia considerables, dadas su alta ganancia y patrón de radiación altamente directivo. 
 La Figura \ref{fig:Equipos} muestra una imagen de los equipos empleados mientras en el Cuadro \ref{Cuadro:1} han sido consignados los valores correspondiente a sus pricipales parámetros
 operativos. Entre los accesorios adicionales empleados durante a ejecución de la práctica pueden citarse un par de trípodes para topografía, cables de red de
 diversas longitudes, fuentes de poder tipo $\textit{Power over ethernet (PoE)}$, adaptadores para conexión de las antenas y dos computadores portátiles que hicieron 
@@ -78,7 +78,7 @@ las veces de estaciones terminales.
 \begin{figure}
     \centering
           \includegraphics[width=0.4\textwidth]{Equipos.png}
-        \caption{Equipo empleados por cada estación del radio enlace.
+        \caption{Equipo empleados por cada estación del radioenlace.
         }
         \label{fig:Equipos}
 \end{figure}
@@ -117,7 +117,7 @@ las veces de estaciones terminales.
     \end{center}
 \end{table}
 \subsection{Configuración de las Estaciones Base}
-Para implementar el radio enlace propuesto, cada una de las estaciones base ubicadas en los nodos extremos del 
+Para implementar el radioenlace propuesto, cada una de las estaciones base ubicadas en los nodos extremos del 
 mismo debe ser configurada siguiendo la arquitectura correspondiente a una conexión punto a punto. Para alcanzar 
 tal fin, uno de los $RocketM5$ debe ser configurado en modo punto de acceso en busca de que su similar, ubicado en el
 nodo remoto opere en modo estación a fin de fijar la señal transmitida por el punto de acceso. Dicha señal debe estar
@@ -132,7 +132,7 @@ distancia (12m) que la señal emitida debe recorrer para alcanzar a la estación
 para la ejecución de la transmisión corresponde al constituido por las frecuencias comprendidas entre los 5175MHz y los 5215MHz, 
 siendo la frecuencia central del mismo igual a 5195MHz.
 \section{Metodología de Medición}
-Una vez realizada la configuración requerida por cada uno de los componentes del radio enlace, las antenas correspondientes a 
+Una vez realizada la configuración requerida por cada uno de los componentes del radioenlace, las antenas correspondientes a 
 estación base y estación remota fueron orientadas de forma tal que la potencia recibida en cada nodo alcanzara su valor máximo. El 
 procedimiento fue repetido para variaciones en la altura de montaje de las antenas en busca del valor máximo de potencia recibida. 
 Establecida la disposición óptima para la operación, se realizaron variaciones paulatinas sobre la altura de la antena del punto de acceso
@@ -154,9 +154,9 @@ recibida generados a partir de cálculos teóricos que emplean el modelo de prop
         \label{fig:Potencias}
 \end{figure}
 \subsection{Análisis de la zona de Fresnel}
-Considerando las condiciones operativas del radio enlace implementado, es posible efectuar la caracterización teórica de la 
+Considerando las condiciones operativas del radioenlace implementado, es posible efectuar la caracterización teórica de la 
 zona de Fresnel existente como resultado de dicho despliegue. La zona de Fresnel puede ser definida como una región cercana a la 
-linea de vista apreciable entre los nodos de un radio enlace que debe encontrarse libre de obstáculos en busca de prevenir los efectos negativos
+linea de vista apreciable entre los nodos de un radioenlace que debe encontrarse libre de obstáculos en busca de prevenir los efectos negativos
 generados sobre la señal en el receptor como consecuencia de fenómenos de multi trayectoria. Su geometría está definida por una serie de elipses 
 posicionadas al rededor de la línea de vista del enlace que establecen la distancia adicional recorrida por los componentes de la señal
 que se han difractado en su recorrido. Existen por lo tanto diversas zonas de Fresnel aunque en la mayoría de circunstancias el análisis 
@@ -164,13 +164,13 @@ sobre el comportamiento de la señal se centra sobre las tres primeras.  En la p
 original contribuyen a incrementar la potencia recibida en los extremos del enlace. 
 
 La caracterización de la zona de Fresnel corresponde al proceso mediante el cual se determina la altura adicional $r_1$ que debe tener la línea de vista
-frente a la altura de un obstáculo determinado $h$ para un radio enlace establecido, según puede apreciarse en la Figura \ref{fig:Fresnel}. Para determinar el valor de $r_1$ la 
+frente a la altura de un obstáculo determinado $h$ para un radioenlace establecido, según puede apreciarse en la Figura \ref{fig:Fresnel}. Para determinar el valor de $r_1$ la 
 relación expresada en \ref{eq:Eq1} es aplicada, siendo $\lambda$ la longitud de onda correspondiente a la frecuencia de operación y $d_1$ y $d_2$ las distancias existentes
 entre los extremos del enlace y el obstáculo analizado.
 \begin{figure}
     \centering
           \includegraphics[width=0.47\textwidth]{Fresnel.png}
-        \caption{Zona de Fresnel para un radio enlace punto a punto.
+        \caption{Zona de Fresnel para un radioenlace punto a punto.
         }
         \label{fig:Fresnel}
 \end{figure}
@@ -198,7 +198,7 @@ señalado en \ref{eq:Eq2}.
         &r_{1} = 0.4161[m]\\
     \end{aligned}
 \end{equation}
-Considerando que la altura del obstáculo existente en el punto medio del trayecto cubierto por el radio enlace se estableció en $1.17[m]$, siguiendo 
+Considerando que la altura del obstáculo existente en el punto medio del trayecto cubierto por el radioenlace se estableció en $1.17[m]$, siguiendo 
 los planteamientos establecidos durante la descripción de la zona de Fresnel es posible afirmar que la altura de las torres de transmisión y recepción 
 puede ser determinada siguiendo las indicaciones especificadas en \ref{eq:Eq3}. Las antenas empleadas para la implementación del enlace propuesto deben ubicarse entonces
 a una altura igual a $1.816[m]$ para cumplir con la restricción impuesta por la primera zona de Fresnel.
@@ -217,7 +217,7 @@ tal función sobre un enlace que abarca 12m de separación y opera a una frecuen
 \begin{figure}
     \centering
           \includegraphics[width=0.45\textwidth]{Altura_Fresnel.png}
-        \caption{Altura de la primera zona de Fresnel para el radio enlace propuesto.
+        \caption{Altura de la primera zona de Fresnel para el radioenlace propuesto.
         }
         \label{fig:Altura_Fresnel}
 \end{figure}
@@ -227,7 +227,7 @@ los conceptos teóricos, se han seleccionado los modelos de propagación en el e
 para determinar los niveles de potencia recibida que se espera observar una vez el enlace implementado entre en operación.
 El modelo de propagación en espacio libre determina el nivel de potencia recibida en función de la distancia y la 
 frecuencia de operación considerando a la vez los valores correspondientes a la potencia transmitida y a las ganancias
-de transmisión y recepción, según se muestra en \ref{eq:Eq4}. 
+de transmisión y recepción \cite{b2}, según se muestra en \ref{eq:Eq4}. 
 \begin{equation}
     \label{eq:Eq4}
     \begin{aligned}
@@ -260,7 +260,7 @@ igual a $68.3453[dB]$ y un estimado para la potencia recibida ideal igual a $-12
 \end{equation}
 El modelo de Barnett-Vignants por su parte, agrega un margen de desvanecimiento sobre el valor ideal de
 la potencia recibida considerando las características del terreno y las condiciones meteorológicas de lugar
-de montaje, mediante un coeficiente denominado $C$. El margen depende también del grado de disponibilidad deseado 
+de montaje, mediante un coeficiente denominado $C$ \cite{b3}. El margen depende también del grado de disponibilidad deseado 
 para el enlace establecido, parámetro que se representa con la letra $R$ en la relación indicada en \ref{eq:Eq6}. 
 \begin{equation}
     \label{eq:Eq6}
@@ -339,10 +339,10 @@ de medición pueden apreciarse en la Figura \ref{fig:Potencia_Modelos}.
         \label{fig:Potencia_Modelos}
 \end{figure}
 \section{Conclusiones}
-Luego de analizar los resultados observados durante la planeación e implementación del radio enlace punto a punto propuesto,
+Luego de analizar los resultados observados durante la planeación e implementación del radioenlace punto a punto propuesto,
 es posible afirmar que buena parte del éxito de la solución propuesta depende de las consideraciones efectuadas durante la fase
 de diseño. Dichas consideraciones corresponden a la determinación de la arquitectura del enlace a constituir, la selección de equipos a emplear, 
-la caracterización de la zona de Fresnel asociada al radio enlace y la aplicación de modelos de propagación que permitan estimar 
+la caracterización de la zona de Fresnel asociada al radioenlace y la aplicación de modelos de propagación que permitan estimar 
 los valores de potencia recibida bajo las condiciones del escenario de trabajo. 
 
 El análisis del comportamiento de la señal al interior de la zona de Fresnel permite establecer que si bien el valor de la potencia
@@ -350,4 +350,12 @@ recibida podría verse incrementada en dicho sector, existen a la vez diversos e
 que pueden afectar el desempeño del enlace establecido. Si adicionalmente los modelos teóricos de propagación correspondientes al espacio libre y 
 al margen de desvanecimiento son empleados durante la fase de planificación del enlace, los resultados alcanzados una vez desplegada la solución
 coinciden con los presupuestos derivados de la aplicación de las relaciones teóricas.
+\begin{thebibliography}{00}
+    \bibitem{b1} S. Sun, T. S. Rappaport, S. Rangan, T. A. Thomas, A. Ghosh, I. Z. Kovacs, I. Rodriguez, O. Koymen, A. Partyka,
+    and J. Jarvelainen, "“Propagation path loss models for 5G urban micro- and macro-cellular scenarios," in 2016
+    IEEE 83rd Vehicular Technology Conference (VTC Spring), 2016
+    \bibitem{b2} Jianhan Liu, et al, (2016) IEEE 802.11ax Channel Model Document  [Online]. Available: https:
+    //mentor.ieee.org/802.11/dcn/14/11-14-0882-04-00ax-tgax-channel-model-document.docx.
+    \bibitem{b3} C. Viteri (2022). Diseño de radioenlaces y celdas [PowerPoint slides]. 
+\end{thebibliography}
 \end{document}

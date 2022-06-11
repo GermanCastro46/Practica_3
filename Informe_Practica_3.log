@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.4.27)  11 JUN 2022 12:24
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.4.27)  11 JUN 2022 12:37
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -446,7 +446,7 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 27.
  (d:/VAIO/LATEX/texlive/2021/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-<Escenario.png, id=45, 880.79062pt x 351.56343pt>
+<Escenario.png, id=49, 880.79062pt x 351.56343pt>
 File: Escenario.png Graphic file (type png)
 <use Escenario.png>
 Package pdftex.def Info: Escenario.png  used on input line 60.
@@ -454,7 +454,7 @@ Package pdftex.def Info: Escenario.png  used on input line 60.
 
 Underfull \vbox (badness 3612) has occurred while \output is active []
 
-<Equipos.png, id=49, 602.25pt x 451.6875pt>
+<Equipos.png, id=53, 602.25pt x 451.6875pt>
 File: Equipos.png Graphic file (type png)
 <use Equipos.png>
 Package pdftex.def Info: Equipos.png  used on input line 80.
@@ -463,24 +463,24 @@ Package pdftex.def Info: Equipos.png  used on input line 80.
 
 
  <d:/Descargas/DOCUMENTOS/MAIE 2021/SEMESTRE 3/INGENIERIA DE RF/PRACTICA_3/Escenario.png>]
-<Potencias.png, id=63, 300.1614pt x 249.5724pt>
+<Potencias.png, id=67, 300.1614pt x 249.5724pt>
 File: Potencias.png Graphic file (type png)
 <use Potencias.png>
 Package pdftex.def Info: Potencias.png  used on input line 151.
 (pdftex.def)             Requested size: 206.39685pt x 171.61105pt.
  [2 <d:/Descargas/DOCUMENTOS/MAIE 2021/SEMESTRE 3/INGENIERIA DE RF/PRACTICA_3/Equipos.png>]
-<Fresnel.png, id=77, 720.44156pt x 240.9pt>
+<Fresnel.png, id=81, 720.44156pt x 240.9pt>
 File: Fresnel.png Graphic file (type png)
 <use Fresnel.png>
 Package pdftex.def Info: Fresnel.png  used on input line 172.
 (pdftex.def)             Requested size: 242.52063pt x 81.09254pt.
-<Altura_Fresnel.png, id=81, 345.9324pt x 283.7802pt>
+<Altura_Fresnel.png, id=85, 345.9324pt x 283.7802pt>
 File: Altura_Fresnel.png Graphic file (type png)
 <use Altura_Fresnel.png>
 Package pdftex.def Info: Altura_Fresnel.png  used on input line 219.
 (pdftex.def)             Requested size: 232.19843pt x 190.48247pt.
  [3 <d:/Descargas/DOCUMENTOS/MAIE 2021/SEMESTRE 3/INGENIERIA DE RF/PRACTICA_3/Potencias.png (PNG copy)> <d:/Descargas/DOCUMENTOS/MAIE 2021/SEMESTRE 3/INGENIERIA DE RF/PRACTICA_3/Fresnel.png>]
-<Potencia_Modelos.png, id=101, 342.5598pt x 284.262pt>
+<Potencia_Modelos.png, id=107, 342.5598pt x 284.262pt>
 File: Potencia_Modelos.png Graphic file (type png)
 <use Potencia_Modelos.png>
 Package pdftex.def Info: Potencia_Modelos.png  used on input line 336.
@@ -502,21 +502,21 @@ LaTeX Info: Redefining \. on input line 25.
 LaTeX Info: Redefining \% on input line 25.
 )
 Package rerunfilecheck Info: File `Informe_Practica_3.out' has not changed.
-(rerunfilecheck)             Checksum: 1EF3733C39456AD808F8A66D20E11BCD;2189.
+(rerunfilecheck)             Checksum: 21908907E07FBE172E290C798AD5D83D;2289.
  ) 
 Here is how much of TeX's memory you used:
- 11804 strings out of 478994
- 175212 string characters out of 5856668
- 521939 words of memory out of 5000000
- 29086 multiletter control sequences out of 15000+600000
+ 11818 strings out of 478994
+ 175345 string characters out of 5856668
+ 521963 words of memory out of 5000000
+ 29096 multiletter control sequences out of 15000+600000
  438224 words of font info for 96 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  71i,12n,74p,622b,362s stack positions out of 5000i,500n,10000p,200000b,80000s
 {d:/VAIO/LATEX/texlive/2021/texmf-dist/fonts/enc/dvips/base/8r.enc}<d:/VAIO/LATEX/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><d:/VAIO/LATEX/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><d:/VAIO/LATEX/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><d:/VAIO/LATEX/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><d:/VAIO/LATEX/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><d:/VAIO/LATEX/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><d:/VAIO/LATEX/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><d:/VAIO/LATEX/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><d:/VAIO/LATEX/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><d:/VAIO/LATEX/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb><d:/VAIO/LATEX/texlive/2021/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><d:/VAIO/LATEX/texlive/2021/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><d:/VAIO/LATEX/texlive/2021/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on "d:/Descargas/DOCUMENTOS/MAIE 2021/SEMESTRE 3/INGENIERIA DE RF/PRACTICA_3/Informe_Practica_3.pdf" (5 pages, 499637 bytes).
+Output written on "d:/Descargas/DOCUMENTOS/MAIE 2021/SEMESTRE 3/INGENIERIA DE RF/PRACTICA_3/Informe_Practica_3.pdf" (5 pages, 501357 bytes).
 PDF statistics:
- 168 PDF objects out of 1000 (max. 8388607)
- 139 compressed objects within 2 object streams
- 31 named destinations out of 1000 (max. 500000)
- 111 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 177 PDF objects out of 1000 (max. 8388607)
+ 148 compressed objects within 2 object streams
+ 35 named destinations out of 1000 (max. 500000)
+ 119 words of extra memory for PDF output out of 10000 (max. 10000000)
 
