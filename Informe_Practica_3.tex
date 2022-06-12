@@ -145,7 +145,7 @@ Concluido el plan de mediciones propuesto se establecieron tres conjuntos de 15 
 por la estación base. Los valores de potencia recibida analizados corresponden a las polarizaciones vertical y horizontal y a la potencia
 promedio calculada por el radio que hace parte de la estación base. A partir de dichos conjuntos, pueden construirse gráficas de la potencia recibida en función de la 
 altura de la antena transmisora para cada caso, según se aprecia en la Figura \ref{fig:Potencias}. Los resultados observados serán empleados para contrastar los valores de potencia 
-recibida generados a partir de cálculos teóricos que emplean el modelo de propagación en espacio libre y el modelo de propagación de Barnett-Vignants.
+recibida generados a partir de cálculos teóricos que emplean el modelo de propagación en espacio libre y el modelo de propagación de Barnett-Vigants.
 \begin{figure}
     \centering
           \includegraphics[width=0.4\textwidth]{Potencias.png}
@@ -223,7 +223,7 @@ tal función sobre un enlace que abarca 12m de separación y opera a una frecuen
 \end{figure}
 \section{Comparación de los resultados obtenidos con los modelos de propagación considerados}
 Para determinar el nivel de ajuste de los datos recolectados frente a las estimaciones efectuadas a partir de 
-los conceptos teóricos, se han seleccionado los modelos de propagación en el espacio libre y de Barnett-Vignants
+los conceptos teóricos, se han seleccionado los modelos de propagación en el espacio libre y de Barnett-Vigants
 para determinar los niveles de potencia recibida que se espera observar una vez el enlace implementado entre en operación.
 El modelo de propagación en espacio libre determina el nivel de potencia recibida en función de la distancia y la 
 frecuencia de operación considerando a la vez los valores correspondientes a la potencia transmitida y a las ganancias
@@ -258,10 +258,11 @@ igual a $68.3453[dB]$ y un estimado para la potencia recibida ideal igual a $-12
         &P_{rx} = -12.3453[dBm]
     \end{aligned}
 \end{equation}
-El modelo de Barnett-Vignants por su parte, agrega un margen de desvanecimiento sobre el valor ideal de
+El modelo de Barnett-Vigants por su parte, agrega un margen de desvanecimiento sobre el valor ideal de
 la potencia recibida considerando las características del terreno y las condiciones meteorológicas de lugar
 de montaje, mediante un coeficiente denominado $C$ \cite{b3}. El margen depende también del grado de disponibilidad deseado 
-para el enlace establecido, parámetro que se representa con la letra $R$ en la relación indicada en \ref{eq:Eq6}. 
+para el enlace establecido, parámetro que se representa con la letra $R$ en la relación indicada en \ref{eq:Eq6}, de forma 
+tal que $(1-R)$ representa el grado objetivo de confiabilidad que se desea para el radioenlace. 
 \begin{equation}
     \label{eq:Eq6}
     \begin{aligned}
@@ -284,14 +285,15 @@ Una vez más, empleando los valores correspondientes a cada parámetro requerido
 para el margen de desvanecimiento que permite establecer el valor final para la potencia recibida estimada. Considerando
 que el lugar seleccionado para el despliegue del montaje cuenta con características meteorológicas del entorno urbano y
 que el terreno no describe pendientes pronunciadas ni vegetación significativa, el coeficiente $C$ puede tomar el valor 1.
-En cuanto a la disponibilidad del enlace, se establece que dada la baja distancia a cubrir el valor de $R$ debe aproximarse 
+Considerando que el modelo de Barnett-Vigants fue desarrollado empleando datos de radioenlaces con distancias superiores a los 
+25Km de separación, en enlaces que cubren cortas distancias el valor de la disponibilidad $R$ establecida debe aproximarse 
 a 1 en busca de señalar que la comunicación debe efectuarse de forma permanente. Establecidos lo valores necesarios, el procedimiento 
 llevado a cabo para determinar el margen del desvanecimiento y estimar el valor de la potencia recibida se muestra en \ref{eq:Eq7}.
 \begin{equation}
     \label{eq:Eq7}
     \begin{aligned}
         &C = 1\\
-        &R = 0.999\\
+        &R = 0.999999999999\\
         &d = 12[m] = 0.012[Km]\\
         &f = 5195[MHz]\\
         &P_{tx} = -4[dBm]\\
@@ -307,7 +309,7 @@ llevado a cabo para determinar el margen del desvanecimiento y estimar el valor 
     \end{aligned}
 \end{equation}
 Concluida la caracterización del enlace, los resultados derivados de la misma empleando los modelos de 
-propagación en el espacio libre y de Barnett-Vignants pueden resumirse según se indica en el Cuadro \ref{Cuadro:2}.
+propagación en el espacio libre y de Barnett-Vigants pueden resumirse según se indica en el Cuadro \ref{Cuadro:2}.
 \begin{table}[!hbt]
     \begin{center}
         \begin{tabular}{ l  l }
@@ -324,7 +326,7 @@ propagación en el espacio libre y de Barnett-Vignants pueden resumirse según s
             \hline
             \hline\\
         \end{tabular}
-    \caption[]{Potencia recibida estimada según modelo de propagación en espacio libre y de Barnett-Vignants}
+    \caption[]{Potencia recibida estimada según modelo de propagación en espacio libre y de Barnett-Vigants}
     \label{Cuadro:2}
     \end{center}
 \end{table}
@@ -343,7 +345,12 @@ Luego de analizar los resultados observados durante la planeación e implementac
 es posible afirmar que buena parte del éxito de la solución propuesta depende de las consideraciones efectuadas durante la fase
 de diseño. Dichas consideraciones corresponden a la determinación de la arquitectura del enlace a constituir, la selección de equipos a emplear, 
 la caracterización de la zona de Fresnel asociada al radioenlace y la aplicación de modelos de propagación que permitan estimar 
-los valores de potencia recibida bajo las condiciones del escenario de trabajo. 
+los valores de potencia recibida bajo las condiciones del escenario de trabajo. Aunque el modelo de Barnett-Vigants empleado para establecer
+el margen de desvanecimiento en radioenlaces de largas distancias puede aplicarse cuando la separación entre las estaciones es pequeña, su 
+aplicación requiere de la selección de un nivel de disponibilidad del enlace bastante elevado, de forma tal que los periodos de tiempo
+en los que la potencia recibida se ve afectada por los fenómenos de desvanecimiento correspondan al orden de los micro segundos. Se requiere
+entonces de la construcción de modelos adicionales que permitan identificar los efectos del desvanecimiento para enlaces de corta distancia, en 
+busca de caracterizar escenarios de diseño e investigación. 
 
 El análisis del comportamiento de la señal al interior de la zona de Fresnel permite establecer que si bien el valor de la potencia
 recibida podría verse incrementada en dicho sector, existen a la vez diversos efectos negativos derivados de los fenómenos multi trayectoria
@@ -352,10 +359,14 @@ al margen de desvanecimiento son empleados durante la fase de planificación del
 coinciden con los presupuestos derivados de la aplicación de las relaciones teóricas.
 \begin{thebibliography}{00}
     \bibitem{b1} S. Sun, T. S. Rappaport, S. Rangan, T. A. Thomas, A. Ghosh, I. Z. Kovacs, I. Rodriguez, O. Koymen, A. Partyka,
-    and J. Jarvelainen, "“Propagation path loss models for 5G urban micro- and macro-cellular scenarios," in 2016
+    and J. Jarvelainen, "Propagation path loss models for 5G urban micro- and macro-cellular scenarios," in 2016
     IEEE 83rd Vehicular Technology Conference (VTC Spring), 2016
     \bibitem{b2} Jianhan Liu, et al, (2016) IEEE 802.11ax Channel Model Document  [Online]. Available: https:
     //mentor.ieee.org/802.11/dcn/14/11-14-0882-04-00ax-tgax-channel-model-document.docx.
-    \bibitem{b3} C. Viteri (2022). Diseño de radioenlaces y celdas [PowerPoint slides]. 
+    \bibitem{b3} C. Viteri (2022). "Diseño de radioenlaces y celdas" [PowerPoint slides]. 
+    \bibitem{b4} W. Barnett, "Multipath propagation at 4, 6, and 11 GHz," in The Bell System Technical Journal, 
+    vol. 51, no. 2, pp. 321-361, Feb. 1972.
+    \bibitem{b5} A. Vigants, "Space-diversity engineering," in The Bell System Technical Journal, vol. 54, 
+    no. 1, pp. 103-142, Jan. 1975.
 \end{thebibliography}
 \end{document}

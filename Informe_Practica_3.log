@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.4.27)  11 JUN 2022 12:37
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.4.27)  12 JUN 2022 12:25
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -480,12 +480,15 @@ File: Altura_Fresnel.png Graphic file (type png)
 Package pdftex.def Info: Altura_Fresnel.png  used on input line 219.
 (pdftex.def)             Requested size: 232.19843pt x 190.48247pt.
  [3 <d:/Descargas/DOCUMENTOS/MAIE 2021/SEMESTRE 3/INGENIERIA DE RF/PRACTICA_3/Potencias.png (PNG copy)> <d:/Descargas/DOCUMENTOS/MAIE 2021/SEMESTRE 3/INGENIERIA DE RF/PRACTICA_3/Fresnel.png>]
-<Potencia_Modelos.png, id=107, 342.5598pt x 284.262pt>
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [4 <d:/Descargas/DOCUMENTOS/MAIE 2021/SEMESTRE 3/INGENIERIA DE RF/PRACTICA_3/Altura_Fresnel.png (PNG copy)>]
+<Potencia_Modelos.png, id=116, 342.5598pt x 284.262pt>
 File: Potencia_Modelos.png Graphic file (type png)
 <use Potencia_Modelos.png>
-Package pdftex.def Info: Potencia_Modelos.png  used on input line 336.
+Package pdftex.def Info: Potencia_Modelos.png  used on input line 338.
 (pdftex.def)             Requested size: 232.19843pt x 192.68834pt.
- [4 <d:/Descargas/DOCUMENTOS/MAIE 2021/SEMESTRE 3/INGENIERIA DE RF/PRACTICA_3/Altura_Fresnel.png (PNG copy)>]
+
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -505,18 +508,18 @@ Package rerunfilecheck Info: File `Informe_Practica_3.out' has not changed.
 (rerunfilecheck)             Checksum: 21908907E07FBE172E290C798AD5D83D;2289.
  ) 
 Here is how much of TeX's memory you used:
- 11818 strings out of 478994
- 175345 string characters out of 5856668
- 521963 words of memory out of 5000000
- 29096 multiletter control sequences out of 15000+600000
+ 11826 strings out of 478994
+ 175427 string characters out of 5856668
+ 517011 words of memory out of 5000000
+ 29102 multiletter control sequences out of 15000+600000
  438224 words of font info for 96 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  71i,12n,74p,622b,362s stack positions out of 5000i,500n,10000p,200000b,80000s
 {d:/VAIO/LATEX/texlive/2021/texmf-dist/fonts/enc/dvips/base/8r.enc}<d:/VAIO/LATEX/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><d:/VAIO/LATEX/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><d:/VAIO/LATEX/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><d:/VAIO/LATEX/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><d:/VAIO/LATEX/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><d:/VAIO/LATEX/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><d:/VAIO/LATEX/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><d:/VAIO/LATEX/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><d:/VAIO/LATEX/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><d:/VAIO/LATEX/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb><d:/VAIO/LATEX/texlive/2021/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><d:/VAIO/LATEX/texlive/2021/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><d:/VAIO/LATEX/texlive/2021/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on "d:/Descargas/DOCUMENTOS/MAIE 2021/SEMESTRE 3/INGENIERIA DE RF/PRACTICA_3/Informe_Practica_3.pdf" (5 pages, 501357 bytes).
+Output written on "d:/Descargas/DOCUMENTOS/MAIE 2021/SEMESTRE 3/INGENIERIA DE RF/PRACTICA_3/Informe_Practica_3.pdf" (5 pages, 502754 bytes).
 PDF statistics:
- 177 PDF objects out of 1000 (max. 8388607)
- 148 compressed objects within 2 object streams
- 35 named destinations out of 1000 (max. 500000)
+ 182 PDF objects out of 1000 (max. 8388607)
+ 153 compressed objects within 2 object streams
+ 37 named destinations out of 1000 (max. 500000)
  119 words of extra memory for PDF output out of 10000 (max. 10000000)
 
