@@ -153,6 +153,12 @@ recibida generados a partir de cálculos teóricos que emplean el modelo de prop
         }
         \label{fig:Potencias}
 \end{figure}
+Aunque es posible apreciar un incremento de la potencia cuando la altura de la torre de transmisión supera el valor establecido
+durante la caracterización de la primera zona de Fresnel, es posible apreciar que existe cierto comportamiento no esperado para dicho valor
+cuando el obstáculo analizado se encuentra al interior de la zona. Una hipótesis para explicar dicho fenómeno radica en que la altura de la
+antena receptora permaneció constante durante la ejecución del experimento, es decir que, si se quiere incrementar la precisión de los resultados
+obtenidos, es recomendable variar las alturas de las dos antenas empleadas de forma tal que el ángulo requerido para la orientación de las 
+mismas no se modifique y se conserve la orientación para alcanzar la potencia máxima.
 \subsection{Análisis de la zona de Fresnel}
 Considerando las condiciones operativas del radioenlace implementado, es posible efectuar la caracterización teórica de la 
 zona de Fresnel existente como resultado de dicho despliegue. La zona de Fresnel puede ser definida como una región cercana a la 
@@ -201,13 +207,13 @@ señalado en \ref{eq:Eq2}.
 Considerando que la altura del obstáculo existente en el punto medio del trayecto cubierto por el radioenlace se estableció en $1.17[m]$, siguiendo 
 los planteamientos establecidos durante la descripción de la zona de Fresnel es posible afirmar que la altura de las torres de transmisión y recepción 
 puede ser determinada siguiendo las indicaciones especificadas en \ref{eq:Eq3}. Las antenas empleadas para la implementación del enlace propuesto deben ubicarse entonces
-a una altura igual a $1.816[m]$ para cumplir con la restricción impuesta por la primera zona de Fresnel.
+a una altura igual a $1.5861[m]$ para cumplir con la restricción impuesta por la primera zona de Fresnel.
 \begin{equation}
     \label{eq:Eq3}
     \begin{aligned}
         &h =1.17[m]\\
         &r_1 = 0.4161[m]\\
-        &h_{torre} = h+r_{1}=1.816[m]\\
+        &h_{torre} = h+r_{1}=1.5861[m]\\
     \end{aligned}
 \end{equation}
 Haciendo uso de los procedimientos descritos es posible establecer el radio de la primera zona de Fresnel a lo
